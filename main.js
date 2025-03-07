@@ -82,19 +82,20 @@ app.commandLine.appendSwitch('log-level','3')
 //template do menu
 const template = [
   {
-    label: 'Notas',
+    label: 'Cadastro',
     submenu: [
-      {
-        label: 'Criar nota',
-        accelerator: 'Ctrl+N',
-      },
-      {
-        type: 'separator'
-      },
       {
         label: 'Sair',
         accelerator: 'Alt+ F4',
         click:() => app.quit()
+      }
+    ]
+  },
+  {
+    label: 'relatorio',
+    submenu:[
+      {
+        label:'Clientes'
       }
     ]
   },
@@ -127,7 +128,7 @@ const template = [
     submenu: [
       {
       label: 'Repositório',
-      click: () => shell.openExternal('https://github.com/Thiago1347')
+      click: () => shell.openExternal('https://github.com/Thiago1347/cadastro-electron')
       },
       {
         label: 'Sobre',
